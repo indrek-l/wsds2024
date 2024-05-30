@@ -103,7 +103,7 @@ async function listiraamatud() {
     resultElement.innerHTML = ""
     for (var raamat of responseData.raamatud) {
 	    resultElement.innerHTML += '<a href="https://hs12-flask-api-raamatud.azurewebsites.net/raamatud/'+raamat+'"  download="'+raamat+'.txt" >' +raamat+".txt</a> " +
-			'<a href="#" onclick="deleteObject(\'http://localhost:5000/raamatud/'+raamat+'\')" > [kustuta]</a>' +
+			'<a href="#" onclick="deleteObject(\'https://hs12-flask-api-raamatud.azurewebsites.net/raamatud/'+raamat+'\')" > [kustuta]</a>' +
 			"<br />";
     }
 
